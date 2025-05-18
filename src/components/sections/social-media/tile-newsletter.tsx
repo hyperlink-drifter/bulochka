@@ -43,9 +43,9 @@ export const TileNewsletter = ({ className }: ComponentProps<'div'>) => {
                   type="email"
                 />
               </div>
-              <span className="px-5 py-3 text-sm font-medium text-center text-white bg-orange-400 rounded-md cursor-pointer hover:bg-orange-500 focus:ring-4 focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800">
+              <button className="px-5 py-3 text-sm font-medium text-center text-white bg-orange-400 rounded-md cursor-pointer hover:bg-orange-500 focus:ring-4 focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800  hover:rotate-2 transition-[rotate]">
                 Subscribe
-              </span>
+              </button>
             </div>
           </div>
         </form>
