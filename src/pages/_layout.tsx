@@ -5,6 +5,7 @@ import type { ReactNode } from 'react';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { Main } from '@/components/main';
+import { HyperlinkDrifter } from '@/components/hyperlink-drifter';
 
 type RootLayoutProps = { children: ReactNode };
 
@@ -18,6 +19,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
       <Header />
       <Main>{children}</Main>
       <Footer />
+      <HyperlinkDrifter />
     </>
   );
 }
