@@ -18,21 +18,30 @@ export const SocialMedia = () => {
           <source src="/videos/teach.mp4" type="video/mp4" />
         </video>
       </div>
-      <Link to="/" className="col-span-1 row-span-1 relative">
+      <Link
+        to="/"
+        className="col-span-1 row-span-1 relative hover:rotate-1 transition-[rotate]"
+      >
         <TileTelegram className="aspect-square" />
         <ExternalLink
           className="text-white absolute bottom-2 right-2"
           size={16}
         />
       </Link>
-      <Link to="/" className="col-span-1 row-span-1 relative">
+      <Link
+        to="/"
+        className="col-span-1 row-span-1 relative hover:rotate-1 transition-[rotate]"
+      >
         <TileInstagram className="aspect-square" />
         <ExternalLink
           className="text-white absolute bottom-2 right-2"
           size={16}
         />
       </Link>
-      <Link to="/" className="col-span-1 row-span-1 relative">
+      <Link
+        to="/"
+        className="col-span-1 row-span-1 relative hover:rotate-1 transition-[rotate]"
+      >
         <TileTikTok className="aspect-square" />
         <ExternalLink
           className="text-white absolute bottom-2 right-2"
