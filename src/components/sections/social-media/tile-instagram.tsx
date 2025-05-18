@@ -9,7 +9,7 @@ export const TileInstagram = ({ className }: React.ComponentProps<'div'>) => {
         className
       )}
     >
-      <div className="place-self-center transition-[width,height,scale] duration-420 w-[48px] h-[48px] group-hover:scale-120">
+      <div className="place-self-center transition-[width,height,scale] duration-420 size-16 group-hover:scale-120">
         <IconInstagram />
       </div>
     </div>

@@ -3,10 +3,11 @@ import { TileInstagram } from './tile-instagram';
 import { TileTikTok } from './tile-tiktok';
 import { TileTelegram } from './tile-telegram';
 import { TileEmoji } from './tile-emoji';
+import { ExternalLink } from 'lucide-react';
 
 export const SocialMedia = () => {
   return (
-    <section className="grid grid-cols-2 md:grid-rows-2 md:grid-cols-4 gap-3 sm:gap-4">
+    <section className="grid grid-cols-2 md:grid-rows-2 md:grid-cols-4 gap-3 sm:gap-4 px-2 sm:px-4 py-8 sm:py-12">
       <div className="col-span-1 row-span-2">
         <video
           autoPlay
@@ -17,21 +18,31 @@ export const SocialMedia = () => {
           <source src="/videos/teach.mp4" type="video/mp4" />
         </video>
       </div>
-      <Link to="/" className="col-span-1 row-span-1">
+      <Link to="/" className="col-span-1 row-span-1 relative">
         <TileTelegram className="aspect-square" />
+        <ExternalLink
+          className="text-white absolute bottom-2 right-2"
+          size={16}
+        />
       </Link>
-      <Link to="/" className="col-span-1 row-span-1">
+      <Link to="/" className="col-span-1 row-span-1 relative">
         <TileInstagram className="aspect-square" />
+        <ExternalLink
+          className="text-white absolute bottom-2 right-2"
+          size={16}
+        />
       </Link>
-      <Link to="/" className="col-span-1 row-span-1">
+      <Link to="/" className="col-span-1 row-span-1 relative">
         <TileTikTok className="aspect-square" />
+        <ExternalLink
+          className="text-white absolute bottom-2 right-2"
+          size={16}
+        />
       </Link>
-      <div className='className="col-span-1 row-span-1"'>
-        <TileEmoji className="aspect-square" />
-      </div>
-      <div className="col-span-2 row-span-1">
+
+      <div className="col-span-2 md:col-span-3 row-span-1">
         <div
-          className="p-4 bg-white border border-gray-200 rounded-lg shadow-md sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700"
+          className="h-full p-4 bg-white border border-gray-200 rounded-lg shadow-md sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700"
           aria-label="Subscribe to the Flowbite newsletter"
         >
           <form>
