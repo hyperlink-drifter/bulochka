@@ -1,7 +1,8 @@
-import IconInstagram from '@/assets/svg/social-media/instagram/logo--white.svg?react';
+import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
+import IconInstagram from '@/assets/svg/social-media/instagram/logo--white.svg?react';
 
-export const TileInstagram = ({ className }: React.ComponentProps<'div'>) => {
+export const TileInstagram = ({ className }: ComponentProps<'div'>) => {
   return (
     <div
       className={cn(

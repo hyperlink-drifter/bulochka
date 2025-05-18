@@ -7,7 +7,7 @@ import { ExternalLink } from 'lucide-react';
 
 export const SocialMedia = () => {
   return (
-    <section className="grid grid-cols-2 md:grid-cols-4 grid-flow-row-dense gap-3 sm:gap-4 px-2 sm:px-4 py-8 sm:py-12">
+    <div className="grid grid-cols-2 md:grid-cols-4 grid-flow-row-dense gap-3 sm:gap-4">
       <div className="col-span-1 row-span-2">
         <video
           autoPlay
@@ -107,6 +107,6 @@ export const SocialMedia = () => {
       <div className="col-span-1 row-span-1 relative">
         <TileEmoji className="aspect-square" />
       </div>
-    </section>
+    </div>
   );
 };
