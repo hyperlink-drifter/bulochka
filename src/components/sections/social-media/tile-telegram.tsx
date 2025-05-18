@@ -1,7 +1,7 @@
 import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 import IconTelegram from '@/assets/svg/social-media/telegram/logo--white.svg?react';
-import { ExternalLink as ExternalLinkIcon } from 'lucide-react';
+import { ExternalLink as IconExternalLink } from 'lucide-react';
 
 export const TileTelegram = ({ className }: ComponentProps<'div'>) => {
   return (
@@ -14,7 +14,7 @@ export const TileTelegram = ({ className }: ComponentProps<'div'>) => {
       )}
     >
       <IconTelegram className="place-self-center duration-420 size-24" />
-      <ExternalLinkIcon
+      <IconExternalLink
         className="text-white absolute bottom-2 right-2"
         size={16}
       />

@@ -1,7 +1,7 @@
 import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 import IconTikTok from '@/assets/svg/social-media/tiktok/logo--colorful.svg?react';
-import { ExternalLink as ExternalLinkIcon } from 'lucide-react';
+import { ExternalLink as IconExternalLink } from 'lucide-react';
 
 export const TileTikTok = ({ className }: ComponentProps<'div'>) => {
   return (
@@ -14,7 +14,7 @@ export const TileTikTok = ({ className }: ComponentProps<'div'>) => {
       )}
     >
       <IconTikTok className="place-self-center duration-420 size-20" />
-      <ExternalLinkIcon
+      <IconExternalLink
         className="text-white absolute bottom-2 right-2"
         size={16}
       />
