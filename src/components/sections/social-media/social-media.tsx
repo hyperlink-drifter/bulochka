@@ -7,7 +7,7 @@ import { ExternalLink } from 'lucide-react';
 
 export const SocialMedia = () => {
   return (
-    <section className="grid grid-cols-2 md:grid-rows-2 md:grid-cols-4 gap-3 sm:gap-4 px-2 sm:px-4 py-8 sm:py-12">
+    <section className="grid grid-cols-2 md:grid-cols-4 grid-flow-row-dense gap-3 sm:gap-4 px-2 sm:px-4 py-8 sm:py-12">
       <div className="col-span-1 row-span-2">
         <video
           autoPlay
@@ -39,12 +39,18 @@ export const SocialMedia = () => {
           size={16}
         />
       </Link>
-
-      <div className="col-span-2 md:col-span-3 row-span-1">
+      <div className="col-span-2 md:col-span-2 row-span-1">
         <div
-          className="h-full p-4 bg-white border border-gray-200 rounded-lg shadow-md sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700"
+          className="h-full p-4 bg-white border border-gray-200 rounded-lg sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700"
           aria-label="Subscribe to the Flowbite newsletter"
         >
+          <h3 className="mb-3 text-xl font-medium text-gray-900 dark:text-white">
+            Get more updates...
+          </h3>
+          <p className="mb-5 text-sm font-medium text-gray-500 dark:text-gray-300">
+            Sign up for our newsletter and you'll be among the first to find out
+            about new features.
+          </p>
           <form>
             <div data-style="clean" className="flex items-end mb-3">
               <div
@@ -66,14 +72,14 @@ export const SocialMedia = () => {
                   </div>
                   <input
                     id="member_email"
-                    className="formkit-input bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    className="formkit-input bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500"
                     name="email_address"
                     aria-label="Email Address"
                     placeholder="Your email address..."
                     type="email"
                   />
                 </div>
-                <span className="px-5 py-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg cursor-pointer hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                <span className="px-5 py-3 text-sm font-medium text-center text-white bg-orange-400 rounded-lg cursor-pointer hover:bg-orange-500 focus:ring-4 focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800">
                   Subscribe
                 </span>
               </div>
@@ -83,13 +89,13 @@ export const SocialMedia = () => {
             By subscribing, you agree with ConvertKit's{' '}
             <a
               href="#"
-              className="text-blue-600 hover:underline dark:text-blue-500"
+              className="text-orange-400 hover:underline dark:text-orange-500"
             >
               Terms of Service
             </a>{' '}
-            and
+            and{' '}
             <a
-              className="text-blue-600 hover:underline dark:text-blue-500"
+              className="text-orange-400 hover:underline dark:text-orange-500"
               href="#"
             >
               Privacy Policy
@@ -97,6 +103,9 @@ export const SocialMedia = () => {
             .
           </div>
         </div>
+      </div>
+      <div className="col-span-1 row-span-1 relative">
+        <TileEmoji className="aspect-square" />
       </div>
     </section>
   );
