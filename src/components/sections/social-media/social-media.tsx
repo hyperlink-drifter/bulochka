@@ -41,7 +41,7 @@ export const SocialMedia = () => {
       </Link>
       <div className="col-span-2 md:col-span-2 row-span-1">
         <div
-          className="h-full p-4 bg-white border border-gray-200 rounded-lg sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700"
+          className="h-full p-4 bg-white border border-gray-200 rounded-md sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700"
           aria-label="Subscribe to the Flowbite newsletter"
         >
           <h3 className="mb-3 text-xl font-medium text-gray-900 dark:text-white">
@@ -72,14 +72,14 @@ export const SocialMedia = () => {
                   </div>
                   <input
                     id="member_email"
-                    className="formkit-input bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500"
+                    className="formkit-input bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-orange-500 focus:border-orange-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500"
                     name="email_address"
                     aria-label="Email Address"
                     placeholder="Your email address..."
                     type="email"
                   />
                 </div>
-                <span className="px-5 py-3 text-sm font-medium text-center text-white bg-orange-400 rounded-lg cursor-pointer hover:bg-orange-500 focus:ring-4 focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800">
+                <span className="px-5 py-3 text-sm font-medium text-center text-white bg-orange-400 rounded-md cursor-pointer hover:bg-orange-500 focus:ring-4 focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800">
                   Subscribe
                 </span>
               </div>
