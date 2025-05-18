@@ -9,13 +9,11 @@ export const TileTelegram = ({ className }: ComponentProps<'div'>) => {
       href="/"
       target="_blank"
       className={cn(
-        'grid relative rounded-md bg-blue-telegram group hover:rotate-1 transition-[rotate]',
+        'grid relative rounded-md bg-blue-telegram hover:rotate-1 transition-[rotate]',
         className
       )}
     >
-      <div className="place-self-center transition-[width,height,scale] duration-420 size-24 group-hover:scale-120">
-        <IconTelegram />
-      </div>
+      <IconTelegram className="place-self-center duration-420 size-24" />
       <ExternalLinkIcon
         className="text-white absolute bottom-2 right-2"
         size={16}

@@ -9,13 +9,11 @@ export const TileTikTok = ({ className }: ComponentProps<'div'>) => {
       href="https://www.tiktok.com/@watch.with.ddaria"
       target="_blank"
       className={cn(
-        'grid relative rounded-md bg-black group hover:rotate-1 transition-[rotate]',
+        'grid relative rounded-md bg-black hover:rotate-1 transition-[rotate]',
         className
       )}
     >
-      <div className="place-self-center transition-[width,height,scale] duration-420 size-20 group-hover:scale-120">
-        <IconTikTok />
-      </div>
+      <IconTikTok className="place-self-center duration-420 size-20" />
       <ExternalLinkIcon
         className="text-white absolute bottom-2 right-2"
         size={16}

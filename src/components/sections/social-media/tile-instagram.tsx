@@ -9,13 +9,11 @@ export const TileInstagram = ({ className }: ComponentProps<'div'>) => {
       href="https://www.instagram.com/watch.with.daria/"
       target="_blank"
       className={cn(
-        'grid relative rounded-md bg-linear-(--gradient-ig) bg-transparent group hover:rotate-1 transition-[rotate]',
+        'grid relative rounded-md bg-linear-(--gradient-ig) bg-transparent hover:rotate-1 transition-[rotate]',
         className
       )}
     >
-      <div className="place-self-center transition-[width,height,scale] duration-420 size-16 group-hover:scale-120">
-        <IconInstagram />
-      </div>
+      <IconInstagram className="place-self-center duration-420 size-16" />
       <ExternalLinkIcon
         className="text-white absolute bottom-2 right-2"
         size={16}
