@@ -2,52 +2,18 @@ import { Link } from 'waku';
 import { TileInstagram } from './tile-instagram';
 import { TileTikTok } from './tile-tiktok';
 import { TileTelegram } from './tile-telegram';
-import { TileEmoji } from './tile-emoji';
 import { ExternalLink } from 'lucide-react';
+import { TileVideo } from './tile-video';
+import { TileDaria } from './tile-daria';
 
 export const SocialMedia = () => {
   return (
     <div className="grid grid-cols-2 md:grid-cols-4 grid-flow-row-dense gap-3 sm:gap-4">
-      <div className="col-span-1 row-span-2">
-        <video
-          autoPlay
-          muted
-          loop
-          className="w-full h-full object-cover rounded-md"
-        >
-          <source src="/videos/teach.mp4" type="video/mp4" />
-        </video>
-      </div>
-      <Link
-        to="/"
-        className="col-span-1 row-span-1 relative hover:rotate-1 transition-[rotate]"
-      >
-        <TileTelegram className="aspect-square" />
-        <ExternalLink
-          className="text-white absolute bottom-2 right-2"
-          size={16}
-        />
-      </Link>
-      <Link
-        to="/"
-        className="col-span-1 row-span-1 relative hover:rotate-1 transition-[rotate]"
-      >
-        <TileInstagram className="aspect-square" />
-        <ExternalLink
-          className="text-white absolute bottom-2 right-2"
-          size={16}
-        />
-      </Link>
-      <Link
-        to="/"
-        className="col-span-1 row-span-1 relative hover:rotate-1 transition-[rotate]"
-      >
-        <TileTikTok className="aspect-square" />
-        <ExternalLink
-          className="text-white absolute bottom-2 right-2"
-          size={16}
-        />
-      </Link>
+      <TileVideo className="col-span-1 row-span-2" />
+      <TileTelegram className="col-span-1 row-span-1 aspect-square" />
+      <TileInstagram className="col-span-1 row-span-1 aspect-square " />
+      <TileTikTok className="col-span-1 row-span-1 aspect-square" />
+
       <div className="col-span-2 md:col-span-2 row-span-1">
         <div
           className="h-full p-4 bg-white border border-gray-200 rounded-md sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700"
@@ -113,9 +79,7 @@ export const SocialMedia = () => {
           </div>
         </div>
       </div>
-      <div className="col-span-1 row-span-1 relative">
-        <TileEmoji className="aspect-square" />
-      </div>
+      <TileDaria className="col-span-1 row-span-1" />
     </div>
   );
 };
