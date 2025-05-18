@@ -9,7 +9,7 @@ import {
 
 export const Header = () => {
   return (
-    <header className="flex items-center gap-4 p-6 lg:fixed lg:left-0 lg:top-0">
+    <header className="sticky top-0 center shadow-[0_6px_0_rgba(0,0,0,0.2)] flex items-center gap-4 lg:left-0 lg:top-0 z-100 bg-white">
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
