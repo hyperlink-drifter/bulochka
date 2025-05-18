@@ -1,4 +1,5 @@
 import { SocialMedia } from '@/components/sections/social-media/social-media';
+import { TestimonialsMarquee } from '@/components/sections/testimonials/testimonials-marquee';
 import { Link } from 'waku';
 
 export default async function HomePage() {
@@ -112,7 +113,12 @@ export default async function HomePage() {
       <Link to="/about" className="mt-4 inline-block underline">
         About page
       </Link>
-      <SocialMedia />
+      <Section>
+        <TestimonialsMarquee />
+      </Section>
+      <Section>
+        <SocialMedia />
+      </Section>
     </div>
   );
 }
