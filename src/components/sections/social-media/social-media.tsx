@@ -2,6 +2,7 @@ import { Link } from 'waku';
 import { TileInstagram } from './tile-instagram';
 import { TileTikTok } from './tile-tiktok';
 import { TileTelegram } from './tile-telegram';
+import { TileEmoji } from './tile-emoji';
 
 export const SocialMedia = () => {
   return (
@@ -16,8 +17,8 @@ export const SocialMedia = () => {
           <source src="/videos/teach.mp4" type="video/mp4" />
         </video>
       </div>
-      <Link to="/" className="col-span-1 row-span-2">
-        <TileTelegram className="h-full" />
+      <Link to="/" className="col-span-1 row-span-1">
+        <TileTelegram className="aspect-square" />
       </Link>
       <Link to="/" className="col-span-1 row-span-1">
         <TileInstagram className="aspect-square" />
@@ -25,6 +26,9 @@ export const SocialMedia = () => {
       <Link to="/" className="col-span-1 row-span-1">
         <TileTikTok className="aspect-square" />
       </Link>
+      <div className='className="col-span-1 row-span-1"'>
+        <TileEmoji className="aspect-square" />
+      </div>
       <div className="col-span-2 row-span-1">
         <div
           className="p-4 bg-white border border-gray-200 rounded-lg shadow-md sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700"
