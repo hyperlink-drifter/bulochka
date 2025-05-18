@@ -1,8 +1,9 @@
 import IconTelegram from '@/assets/svg/social-media/telegram/logo--white.svg?react';
+import { cn } from '@/lib/utils';
 
-export const TileTelegram = () => {
+export const TileTelegram = ({ className }: React.ComponentProps<'div'>) => {
   return (
-    <div className="grid rounded-md h-full bg-blue-telegram group">
+    <div className={cn('grid rounded-md bg-blue-telegram group', className)}>
       <div className="place-self-center transition-[width,height,scale] duration-420 w-[48px] h-[48px] group-hover:scale-120">
         <IconTelegram />
       </div>

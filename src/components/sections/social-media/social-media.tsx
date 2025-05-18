@@ -17,13 +17,13 @@ export const SocialMedia = () => {
         </video>
       </div>
       <Link to="/" className="col-span-1 row-span-2">
-        <TileTelegram />
+        <TileTelegram className="h-full" />
       </Link>
       <Link to="/" className="col-span-1 row-span-1">
-        <TileInstagram />
+        <TileInstagram className="aspect-square" />
       </Link>
       <Link to="/" className="col-span-1 row-span-1">
-        <TileTikTok />
+        <TileTikTok className="aspect-square" />
       </Link>
       <div className="col-span-2 row-span-1">
         <div
