@@ -1,10 +1,10 @@
 export const HyperlinkDrifter = () => {
   return (
-    <aside>
+    <aside className="text-center">
       <a
         href="https://hyperlink-drifter.com/"
         target="_blank"
-        className="mt-4 inline-block underline"
+        className="inline-block underline"
       >
         hyperlink-drifter
       </a>

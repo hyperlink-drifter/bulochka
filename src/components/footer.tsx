@@ -2,6 +2,11 @@ import { Link } from 'waku';
 import { Section } from '@/components/layouts/section';
 import { Center } from '@/components/layouts/center';
 import { HyperlinkDrifter } from '@/components/hyperlink-drifter';
+import {
+  FaTiktok as IconFaTiktok,
+  FaInstagram as IconFaInstagram,
+  FaTelegram as IconFaTelegram,
+} from 'react-icons/fa';
 
 export const Footer = () => {
   return (
@@ -9,59 +14,47 @@ export const Footer = () => {
       <Section>
         <Center>
           <div className="relative bg-white rounded-md p-3 sm:p-4 z-100">
-            <Link to="/">
-              <div className="">
-                <h3>Watch With Daria</h3>
-                <span className="sr-only">Return to The Markup's homepage</span>
-              </div>
+            <Link to="/" className="text-center">
+              <h3 className="font-black text-2xl sm:text-4xl">
+                WATCH WITH DARIA
+              </h3>
+              <span className="sr-only">Return to homepage</span>
             </Link>
-            <div>
-              <div>
-                <nav>
-                  <ul>
-                    <li>
-                      <Link to="/">Home Alone</Link>
-                    </li>
-                    <li>
-                      <Link to="/">Shrek</Link>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-              <div>
-                <nav>
-                  <ul>
-                    <li>
-                      <Link to="/">About</Link>
-                    </li>
-                    <li>
-                      <Link to="/">Faq</Link>
-                    </li>
-                    <li>
-                      <Link to="/">Imprint</Link>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-              <div>
-                <nav>
-                  <ul>
-                    <li>
-                      <Link to="/">Instagram</Link>
-                    </li>
-                    <li>
-                      <Link to="/">TikTok</Link>
-                    </li>
-                    <li>
-                      <Link to="/">Telegram</Link>
-                    </li>
-                    <li>
-                      <Link to="/">Newsletter</Link>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
+            <nav>
+              <ul className="flex flex-wrap justify-center gap-x-4 gap-y-2 font-medium">
+                <li>
+                  <Link to="/">Courses</Link>
+                </li>
+                <li>
+                  <Link to="/">About</Link>
+                </li>
+                <li>
+                  <Link to="/">FAQ</Link>
+                </li>
+                <li>
+                  <Link to="/">Blog</Link>
+                </li>
+              </ul>
+            </nav>
+            <nav>
+              <ul className="flex justify-center gap-4">
+                <li>
+                  <Link to="/">
+                    <IconFaInstagram className="size-7" />
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/">
+                    <IconFaTiktok className="size-7" />
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/">
+                    <IconFaTelegram className="size-7" />
+                  </Link>
+                </li>
+              </ul>
+            </nav>
             <HyperlinkDrifter />
           </div>
         </Center>

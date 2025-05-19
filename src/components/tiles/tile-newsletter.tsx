@@ -4,9 +4,9 @@ import { Tile } from '@/components/tiles/tile-base';
 
 export const TileNewsletter = ({ className }: ComponentProps<'div'>) => {
   return (
-    <Tile className={cn('', className)}>
+    <Tile className={cn('border border-gray-200', className)}>
       <div
-        className="h-full p-4 bg-white border border-gray-200 rounded-md sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700"
+        className="h-full p-3 sm:p-4 bg-white"
         aria-label="Subscribe to the Flowbite newsletter"
       >
         <h3 className="mb-3 text-xl font-medium text-gray-900 dark:text-white">
