@@ -1,9 +1,9 @@
-import { TileInstagram } from './tile-instagram';
-import { TileTikTok } from './tile-tiktok';
-import { TileTelegram } from './tile-telegram';
-import { TileVideo } from './tile-video';
-import { TileDaria } from './tile-daria';
-import { TileNewsletter } from './tile-newsletter';
+import { TileInstagram } from '@/components/tiles/tile-instagram';
+import { TileTikTok } from '@/components/tiles/tile-tiktok';
+import { TileTelegram } from '@/components/tiles/tile-telegram';
+import { TileVideo } from '@/components/tiles/tile-video';
+import { TileDaria } from '@/components/tiles/tile-daria';
+import { TileNewsletter } from '@/components/tiles/tile-newsletter';
 import { Section } from '@/components/layouts/section';
 
 export const SocialMedia = () => {

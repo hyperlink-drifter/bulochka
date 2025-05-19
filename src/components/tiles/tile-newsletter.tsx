@@ -1,9 +1,10 @@
 import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
+import { Tile } from '@/components/tiles/tile-base';
 
 export const TileNewsletter = ({ className }: ComponentProps<'div'>) => {
   return (
-    <div className={cn('relative', className)}>
+    <Tile className={cn('', className)}>
       <div
         className="h-full p-4 bg-white border border-gray-200 rounded-md sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700"
         aria-label="Subscribe to the Flowbite newsletter"
@@ -67,6 +68,6 @@ export const TileNewsletter = ({ className }: ComponentProps<'div'>) => {
           .
         </div>
       </div>
-    </div>
+    </Tile>
   );
 };

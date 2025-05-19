@@ -1,9 +1,10 @@
 import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
+import { Tile } from '@/components/tiles/tile-base';
 
 export const TileDaria = ({ className }: ComponentProps<'div'>) => {
   return (
-    <div className={cn('group relative rounded-md overflow-clip', className)}>
+    <Tile className={cn('', className)}>
       <img
         src="/images/daria-and-the-popcorn.jpg"
         className="h-full object-cover object-left"
@@ -14,6 +15,6 @@ export const TileDaria = ({ className }: ComponentProps<'div'>) => {
         fetchPriority="low"
         className="opacity-0 group-hover:pointer-fine:opacity-100 transition-[opacity] absolute top-0 w-full h-full object-cover object-left"
       />
-    </div>
+    </Tile>
   );
 };
