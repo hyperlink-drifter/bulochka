@@ -5,16 +5,21 @@ import { TileVideo } from '@/components/tiles/tile-video';
 import { TileDaria } from '@/components/tiles/tile-daria';
 import { TileNewsletter } from '@/components/tiles/tile-newsletter';
 import { Section } from '@/components/layouts/section';
+import { Center } from '@/components/layouts/center';
 
 export const SocialMedia = () => {
   return (
-    <Section className="grid grid-cols-2 md:grid-cols-4 grid-flow-row-dense gap-3 sm:gap-4">
-      <TileVideo className="col-span-1 row-span-2" />
-      <TileTelegram className="col-span-1 row-span-1 aspect-square" />
-      <TileInstagram className="col-span-1 row-span-1 aspect-square " />
-      <TileTikTok className="col-span-1 row-span-1 aspect-square" />
-      <TileNewsletter className="col-span-2 md:col-span-2 row-span-1" />
-      <TileDaria className="col-span-1 row-span-1 aspect-square" />
+    <Section>
+      <Center>
+        <div className="grid grid-cols-2 md:grid-cols-4 grid-flow-row-dense gap-3 sm:gap-4">
+          <TileVideo className="col-span-1 row-span-2" />
+          <TileTelegram className="col-span-1 row-span-1 aspect-square" />
+          <TileInstagram className="col-span-1 row-span-1 aspect-square " />
+          <TileTikTok className="col-span-1 row-span-1 aspect-square" />
+          <TileNewsletter className="col-span-2 md:col-span-2 row-span-1" />
+          <TileDaria className="col-span-1 row-span-1 aspect-square" />
+        </div>
+      </Center>
     </Section>
   );
 };
