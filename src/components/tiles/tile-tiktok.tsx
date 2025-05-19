@@ -1,7 +1,8 @@
 import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 import IconTikTok from '@/assets/svg/social-media/tiktok/logo--colorful.svg?react';
-import { ExternalLink as IconExternalLink } from 'lucide-react';
+import { FaExternalLinkAlt as IconFaExternalLinkAlt } from 'react-icons/fa';
+
 import { Tile } from '@/components/tiles/tile-base';
 
 export const TileTikTok = ({ className }: ComponentProps<'div'>) => {
@@ -15,10 +16,7 @@ export const TileTikTok = ({ className }: ComponentProps<'div'>) => {
         className="grid col-span-full row-span-full"
       >
         <IconTikTok className="place-self-center size-20" />
-        <IconExternalLink
-          className="text-white absolute bottom-2 right-2"
-          size={16}
-        />
+        <IconFaExternalLinkAlt className="text-white absolute bottom-2 right-2 size-3" />
       </a>
     </Tile>
   );

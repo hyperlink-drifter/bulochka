@@ -1,7 +1,7 @@
 import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 import IconInstagram from '@/assets/svg/social-media/instagram/logo--white.svg?react';
-import { ExternalLink as IconExternalLink } from 'lucide-react';
+import { FaExternalLinkAlt as IconFaExternalLinkAlt } from 'react-icons/fa';
 import { Tile } from '@/components/tiles/tile-base';
 
 export const TileInstagram = ({ className }: ComponentProps<'div'>) => {
@@ -18,10 +18,7 @@ export const TileInstagram = ({ className }: ComponentProps<'div'>) => {
         className="grid col-span-full row-span-full"
       >
         <IconInstagram className="place-self-center size-16" />
-        <IconExternalLink
-          className="text-white absolute bottom-2 right-2"
-          size={16}
-        />
+        <IconFaExternalLinkAlt className="text-white absolute bottom-2 right-2 size-3" />
       </a>
     </Tile>
   );

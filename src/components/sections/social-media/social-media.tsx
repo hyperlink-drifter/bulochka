@@ -14,7 +14,7 @@ export const SocialMedia = () => {
       <TileInstagram className="col-span-1 row-span-1 aspect-square " />
       <TileTikTok className="col-span-1 row-span-1 aspect-square" />
       <TileNewsletter className="col-span-2 md:col-span-2 row-span-1" />
-      <TileDaria className="col-span-1 row-span-1" />
+      <TileDaria className="col-span-1 row-span-1 aspect-square" />
     </Section>
   );
 };
