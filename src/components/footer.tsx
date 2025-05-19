@@ -39,19 +39,31 @@ export const Footer = () => {
             <nav>
               <ul className="flex justify-center gap-4">
                 <li>
-                  <Link to="/">
-                    <IconFaInstagram className="size-7" />
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/">
-                    <IconFaTiktok className="size-7" />
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/">
+                  <a
+                    href="/"
+                    target="_blank"
+                    className="block p-1 rounded-md hover:bg-blue-telegram hover:text-white"
+                  >
                     <IconFaTelegram className="size-7" />
-                  </Link>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/watch.with.daria/"
+                    target="_blank"
+                    className="block p-1 rounded-md hover:bg-linear-(--gradient-ig) hover:text-white"
+                  >
+                    <IconFaInstagram className="size-7" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.tiktok.com/@watch.with.ddaria"
+                    target="_blank"
+                    className="block p-1 rounded-md hover:bg-black hover:text-white"
+                  >
+                    <IconFaTiktok className="size-7" />
+                  </a>
                 </li>
               </ul>
             </nav>
