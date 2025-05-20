@@ -8,7 +8,7 @@ export const TileInstagram = ({ className }: ComponentProps<'div'>) => {
   return (
     <Tile
       className={cn(
-        'bg-linear-(--gradient-ig) hover:rotate-1 transition-[rotate]',
+        'bg-linear-(--gradient-ig) hover:rotate-1 transition-[rotate] h-full',
         className
       )}
     >

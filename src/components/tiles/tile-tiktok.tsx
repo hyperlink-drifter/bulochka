@@ -8,7 +8,10 @@ import { Tile } from '@/components/tiles/tile-base';
 export const TileTikTok = ({ className }: ComponentProps<'div'>) => {
   return (
     <Tile
-      className={cn('bg-black hover:rotate-1 transition-[rotate]', className)}
+      className={cn(
+        'bg-black hover:rotate-1 transition-[rotate] h-full',
+        className
+      )}
     >
       <a
         href="https://www.tiktok.com/@watch.with.ddaria"

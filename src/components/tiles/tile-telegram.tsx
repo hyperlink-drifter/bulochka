@@ -9,7 +9,7 @@ export const TileTelegram = ({ className }: ComponentProps<'div'>) => {
   return (
     <Tile
       className={cn(
-        'bg-blue-telegram hover:rotate-1 transition-[rotate]',
+        'bg-blue-telegram hover:rotate-1 transition-[rotate] h-full',
         className
       )}
     >

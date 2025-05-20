@@ -6,7 +6,7 @@ import H from '@/components/layouts/headings';
 
 export const TileNewsletter = ({ className }: ComponentProps<'div'>) => {
   return (
-    <Tile className={cn('border border-gray-200', className)}>
+    <Tile className={cn('border border-gray-200 h-full', className)}>
       <div
         className="place-self-center p-3 sm:p-4 bg-white"
         aria-label="Subscribe to the Flowbite newsletter"
