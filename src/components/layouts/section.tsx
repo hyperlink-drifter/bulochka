@@ -1,10 +1,20 @@
-import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 
-export const Section = ({ children, className }: ComponentProps<'section'>) => {
+type SectionProps = {
+  className?: string;
+  as?: 'section' | 'div';
+  children: React.ReactNode;
+} & React.HTMLAttributes<HTMLElement>;
+
+export const Section = ({
+  children,
+  className,
+  as: Tag = 'section',
+  ...forwardedProps
+}: SectionProps) => {
   return (
-    <section className={cn('relative py-6 sm:py-8', className)}>
+    <Tag className={cn('relative py-6 sm:py-8', className)} {...forwardedProps}>
       {children}
-    </section>
+    </Tag>
   );
 };

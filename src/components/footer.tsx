@@ -11,7 +11,7 @@ import {
 export const Footer = () => {
   return (
     <footer className="relative z-10 overflow-clip w-full bg-[url(/images/cinema-pattern--006.svg)] bg-orange-400 bg-size-[160px_160px] bg-repeat bg-center">
-      <Section>
+      <Section as="div">
         <Center>
           <div className="relative bg-white rounded-md p-3 sm:p-4 z-100">
             <Link to="/" className="text-center">
