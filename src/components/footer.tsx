@@ -1,6 +1,7 @@
 import { Link } from 'waku';
 import { Section } from '@/components/layouts/section';
 import { Center } from '@/components/layouts/center';
+import H from '@/components/layouts/headings';
 import { HyperlinkDrifter } from '@/components/hyperlink-drifter';
 import {
   FaTiktok as IconFaTiktok,
@@ -15,9 +16,9 @@ export const Footer = () => {
         <Center>
           <div className="relative bg-white rounded-md p-3 sm:p-4 z-100">
             <Link to="/" className="text-center">
-              <h3 className="font-black text-2xl sm:text-4xl">
+              <H as="h3" looksLike="h1">
                 WATCH WITH DARIA
-              </h3>
+              </H>
               <span className="sr-only">Return to homepage</span>
             </Link>
             <nav>
