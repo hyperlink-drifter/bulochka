@@ -23,9 +23,9 @@ export const TileNewsletter = ({ className }: ComponentProps<'div'>) => {
             <div
               data-element="fields"
               data-stacked="false"
-              className="flex items-center w-full max-w-md mb-3 seva-fields formkit-fields"
+              className="flex flex-col md:flex-row gap-3 sm:gap-4 w-full max-w-md mb-3 seva-fields formkit-fields"
             >
-              <div className="relative w-full mr-3 formkit-field">
+              <div className="relative w-full formkit-field">
                 <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                   <svg
                     className="w-4 h-4 text-gray-500 dark:text-gray-400"
