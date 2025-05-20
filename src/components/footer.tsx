@@ -8,6 +8,7 @@ import {
   FaInstagram as IconInstagram,
   FaTelegram as IconTelegram,
 } from 'react-icons/fa';
+import { Copy } from '@/components/copy';
 
 export const Footer = () => {
   return (
@@ -78,6 +79,7 @@ export const Footer = () => {
                 </li>
               </ul>
             </nav>
+            <Copy className="block text-center" />
             <HyperlinkDrifter />
           </div>
         </Center>
