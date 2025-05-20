@@ -143,7 +143,7 @@ function CarouselContent({ className, ...props }: React.ComponentProps<'div'>) {
       <div
         className={cn(
           'flex',
-          orientation === 'horizontal' ? '-ml-4' : '-mt-4 flex-col',
+          orientation === 'horizontal' ? 'gap-3 sm:gap-4' : '-mt-4 flex-col',
           className
         )}
         {...props}
@@ -160,11 +160,7 @@ function CarouselItem({ className, ...props }: React.ComponentProps<'div'>) {
       role="group"
       aria-roledescription="slide"
       data-slot="carousel-item"
-      className={cn(
-        'min-w-0 shrink-0 grow-0 basis-full',
-        orientation === 'horizontal' ? 'pl-3 sm:pl-4' : 'pt-3 sm:pt-4',
-        className
-      )}
+      className={cn('min-w-0 shrink-0 grow-0 basis-full', className)}
       {...props}
     />
   );
