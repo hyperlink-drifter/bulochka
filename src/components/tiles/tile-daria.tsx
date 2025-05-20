@@ -7,13 +7,13 @@ export const TileDaria = ({ className }: ComponentProps<'div'>) => {
     <Tile className={cn('', className)}>
       <img
         src="/images/daria-and-the-popcorn.jpg"
-        className="h-full object-cover object-left"
+        className="h-full w-full object-cover object-left"
       />
       <img
         src="/images/daria-and-the-popcorn--hover.jpg"
         loading="lazy"
         fetchPriority="low"
-        className="opacity-0 group-hover:pointer-fine:opacity-100 transition-[opacity] absolute top-0 w-full h-full object-cover object-left"
+        className="opacity-0 group-hover:pointer-fine:opacity-100 transition-[opacity] absolute inset-0 w-full h-full object-cover object-left"
       />
     </Tile>
   );
