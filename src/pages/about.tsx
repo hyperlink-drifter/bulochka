@@ -1,4 +1,4 @@
-import { Link } from 'waku';
+import A from '@/components/layouts/links';
 
 export default async function AboutPage() {
   const data = await getData();
@@ -8,9 +8,9 @@ export default async function AboutPage() {
       <title>{data.title}</title>
       <h1 className="text-4xl font-bold tracking-tight">{data.headline}</h1>
       <p>{data.body}</p>
-      <Link to="/" className="mt-4 inline-block underline">
+      <A to="/" className="mt-4 inline-block underline">
         Return home
-      </Link>
+      </A>
     </div>
   );
 }

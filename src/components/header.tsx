@@ -1,4 +1,3 @@
-import { Link } from 'waku';
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -7,6 +6,7 @@ import {
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
 import { Center } from '@/components/layouts/center';
+import A from '@/components/layouts/links';
 
 export const Header = () => {
   return (
@@ -16,24 +16,24 @@ export const Header = () => {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <Link to="/">
+                <A to="/">
                   <NavigationMenuLink
                     asChild
                     className={navigationMenuTriggerStyle()}
                   >
                     <span>Home</span>
                   </NavigationMenuLink>
-                </Link>
+                </A>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <Link to="/about">
+                <A to="/about">
                   <NavigationMenuLink
                     asChild
                     className={navigationMenuTriggerStyle()}
                   >
                     <span>About</span>
                   </NavigationMenuLink>
-                </Link>
+                </A>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>

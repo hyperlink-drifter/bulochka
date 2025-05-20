@@ -17,7 +17,10 @@ export default function H({
   ...forwardedProps
 }: HeadingProps) {
   return (
-    <Tag className={cn('', looksLike, className)} {...forwardedProps}>
+    <Tag
+      className={cn('', looksLike || Tag || '', className)}
+      {...forwardedProps}
+    >
       {children}
     </Tag>
   );
