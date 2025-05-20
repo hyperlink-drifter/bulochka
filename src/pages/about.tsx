@@ -1,3 +1,4 @@
+import H from '@/components/layouts/headings';
 import A from '@/components/layouts/links';
 
 export default async function AboutPage() {
@@ -6,7 +7,9 @@ export default async function AboutPage() {
   return (
     <div>
       <title>{data.title}</title>
-      <h1 className="text-4xl font-bold tracking-tight">{data.headline}</h1>
+      <H as="h1" className="text-4xl font-bold tracking-tight">
+        {data.headline}
+      </H>
       <p>{data.body}</p>
       <A to="/" className="mt-4 inline-block underline">
         Return home

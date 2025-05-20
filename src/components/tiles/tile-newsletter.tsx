@@ -1,20 +1,22 @@
 import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils';
 import { Tile } from '@/components/tiles/tile-base';
+import A from '@/components/layouts/links';
+import H from '@/components/layouts/headings';
 
 export const TileNewsletter = ({ className }: ComponentProps<'div'>) => {
   return (
     <Tile className={cn('border border-gray-200', className)}>
       <div
-        className="h-full p-3 sm:p-4 bg-white"
+        className="place-self-center p-3 sm:p-4 bg-white"
         aria-label="Subscribe to the Flowbite newsletter"
       >
-        <h3 className="mb-3 text-xl font-medium text-gray-900 dark:text-white">
+        <H as="h3" className="mb-3 text-gray-900 dark:text-white">
           Get more updates...
-        </h3>
+        </H>
         <p className="mb-5 text-sm font-medium text-gray-500 dark:text-gray-300">
-          Sign up for our newsletter and you'll be among the first to find out
-          about new features.
+          Subscribe to our <A to="/">newsletter</A> and get 20% off your first
+          order.
         </p>
         <form>
           <div data-style="clean" className="flex items-end mb-3">
@@ -50,23 +52,6 @@ export const TileNewsletter = ({ className }: ComponentProps<'div'>) => {
             </div>
           </div>
         </form>
-        <div className="text-sm font-medium text-gray-500 dark:text-gray-300">
-          By subscribing, you agree with ConvertKit's{' '}
-          <a
-            href="#"
-            className="text-orange-400 hover:underline dark:text-orange-500"
-          >
-            Terms of Service
-          </a>{' '}
-          and{' '}
-          <a
-            className="text-orange-400 hover:underline dark:text-orange-500"
-            href="#"
-          >
-            Privacy Policy
-          </a>
-          .
-        </div>
       </div>
     </Tile>
   );

@@ -4,9 +4,9 @@ import H from '@/components/layouts/headings';
 import A from '@/components/layouts/links';
 import { HyperlinkDrifter } from '@/components/hyperlink-drifter';
 import {
-  FaTiktok as IconFaTiktok,
-  FaInstagram as IconFaInstagram,
-  FaTelegram as IconFaTelegram,
+  FaTiktok as IconTiktok,
+  FaInstagram as IconInstagram,
+  FaTelegram as IconTelegram,
 } from 'react-icons/fa';
 
 export const Footer = () => {
@@ -24,16 +24,29 @@ export const Footer = () => {
             <nav>
               <ul className="flex flex-wrap justify-center gap-x-4 gap-y-2 font-medium">
                 <li>
-                  <A to="/">Courses</A>
+                  <A to="/" className="p-1">
+                    Courses
+                  </A>
                 </li>
                 <li>
-                  <A to="/">About</A>
+                  <A to="/" className="p-1">
+                    Newsletter
+                  </A>
                 </li>
                 <li>
-                  <A to="/">FAQ</A>
+                  <A to="/about" className="p-1">
+                    About
+                  </A>
                 </li>
                 <li>
-                  <A to="/">Blog</A>
+                  <A to="/" className="p-1">
+                    FAQ
+                  </A>
+                </li>
+                <li>
+                  <A to="/" className="p-1">
+                    Blog
+                  </A>
                 </li>
               </ul>
             </nav>
@@ -44,7 +57,7 @@ export const Footer = () => {
                     href="https://web.telegram.org/"
                     className="block p-1 rounded-md hover:bg-blue-telegram hover:text-white"
                   >
-                    <IconFaTelegram className="size-7" />
+                    <IconTelegram className="size-7" />
                   </A>
                 </li>
                 <li>
@@ -52,7 +65,7 @@ export const Footer = () => {
                     href="https://www.instagram.com/watch.with.daria/"
                     className="block p-1 rounded-md hover:bg-linear-(--gradient-ig) hover:text-white"
                   >
-                    <IconFaInstagram className="size-7" />
+                    <IconInstagram className="size-7" />
                   </A>
                 </li>
                 <li>
@@ -60,7 +73,7 @@ export const Footer = () => {
                     href="https://www.tiktok.com/@watch.with.ddaria"
                     className="block p-1 rounded-md hover:bg-black hover:text-white"
                   >
-                    <IconFaTiktok className="size-7" />
+                    <IconTiktok className="size-7" />
                   </A>
                 </li>
               </ul>
