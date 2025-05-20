@@ -1,4 +1,5 @@
 import { cn } from '@/lib/utils';
+import { Center } from '@/components/layouts/center';
 
 type SectionProps = {
   className?: string;
@@ -14,7 +15,7 @@ export const Section = ({
 }: SectionProps) => {
   return (
     <Tag className={cn('relative py-6 sm:py-8', className)} {...forwardedProps}>
-      {children}
+      <Center>{children}</Center>
     </Tag>
   );
 };
