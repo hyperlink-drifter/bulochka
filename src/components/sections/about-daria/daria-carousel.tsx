@@ -6,13 +6,15 @@ import {
   CarouselContent,
   CarouselItem,
 } from '@/components/ui/carousel';
+import { cn } from '@/lib/utils';
 import Autoplay from 'embla-carousel-autoplay';
 import Fade from 'embla-carousel-fade';
+import { ComponentProps } from 'react';
 
-export const DariaCarousel = () => {
+export const DariaCarousel = ({ className }: ComponentProps<'div'>) => {
   return (
     <Carousel
-      className="col-span-8 md:col-span-4"
+      className={cn('', className)}
       opts={{
         watchDrag: false,
       }}
@@ -23,10 +25,13 @@ export const DariaCarousel = () => {
         Fade(),
       ]}
     >
-      <CarouselContent sticky top="14">
+      <CarouselContent>
         <CarouselItem>
           <Tile className="aspect-3/4">
-            <img src="/images/about-daria--001.jpg" />
+            <img
+              src="/images/about-daria--001.jpg"
+              className="w-full h-full object-cover"
+            />
           </Tile>
         </CarouselItem>
         <CarouselItem>
@@ -35,6 +40,7 @@ export const DariaCarousel = () => {
               src="/images/about-daria--002.jpg"
               loading="lazy"
               fetchPriority="low"
+              className="w-full h-full object-cover"
             />
           </Tile>
         </CarouselItem>

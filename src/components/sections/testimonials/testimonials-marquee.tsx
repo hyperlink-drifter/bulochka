@@ -1,6 +1,7 @@
 import { Marquee } from '@/components/magicui/marquee';
 import { ReviewCard, reviews } from './review-card';
 import { Section } from '@/components/layouts/section';
+import H from '@/components/layouts/headings';
 
 const firstRow = reviews.slice(0, reviews.length / 2);
 const secondRow = reviews.slice(reviews.length / 2);
@@ -8,6 +9,8 @@ const secondRow = reviews.slice(reviews.length / 2);
 export function TestimonialsMarquee() {
   return (
     <Section>
+      <H as="h2">Відгуки🧡</H>
+      <p>What others say about us</p>
       <div className="grid gap-3 sm:gap-4">
         <Marquee
           pauseOnHover

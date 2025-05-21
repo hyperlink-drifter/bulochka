@@ -131,22 +131,13 @@ function Carousel({
   );
 }
 
-function CarouselContent({
-  className,
-  ...props
-}: React.ComponentProps<'div'> & { sticky: boolean; top: string }) {
+function CarouselContent({ className, ...props }: React.ComponentProps<'div'>) {
   const { carouselRef, orientation } = useCarousel();
-
-  const { sticky, top = '0' } = props;
 
   return (
     <div
       ref={carouselRef}
-      className={cn(
-        'overflow-hidden',
-        sticky ? 'sticky' : 'relative',
-        top ? `top-${top}` : ''
-      )}
+      className="overflow-hidden"
       data-slot="carousel-content"
     >
       <div
