@@ -23,7 +23,7 @@ export const DariaCarousel = () => {
         Fade(),
       ]}
     >
-      <CarouselContent>
+      <CarouselContent sticky top="14">
         <CarouselItem>
           <Tile className="aspect-3/4">
             <img src="/images/about-daria--001.jpg" />
