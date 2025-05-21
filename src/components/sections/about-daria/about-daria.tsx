@@ -1,15 +1,7 @@
-'use client';
-
 import { Section } from '@/components/layouts/section';
 import { Tile } from '@/components/tiles/tile-base';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from '@/components/ui/carousel';
-import Autoplay from 'embla-carousel-autoplay';
-import Fade from 'embla-carousel-fade';
 import H from '@/components/layouts/headings';
+import { DariaCarousel } from './daria-carousel';
 
 export const AboutDaria = () => {
   return (
@@ -43,35 +35,8 @@ export const AboutDaria = () => {
             <li>Слова перестануть звучати одним потоком, а набудуть сенсу</li>
           </ul>
         </div>
-        <Carousel
-          className="col-span-full md:col-span-4"
-          opts={{
-            watchDrag: false,
-          }}
-          plugins={[
-            Autoplay({
-              delay: 6000,
-            }),
-            Fade(),
-          ]}
-        >
-          <CarouselContent>
-            <CarouselItem>
-              <Tile className="aspect-3/4">
-                <img src="/images/about-daria--001.jpg" />
-              </Tile>
-            </CarouselItem>
-            <CarouselItem>
-              <Tile className="aspect-3/4">
-                <img
-                  src="/images/about-daria--002.jpg"
-                  loading="lazy"
-                  fetchPriority="low"
-                />
-              </Tile>
-            </CarouselItem>
-          </CarouselContent>
-        </Carousel>
+        <DariaCarousel />
+        <Tile className="col-span-4 md:hidden bg-[url(/images/cinema-pattern--006.svg)] bg-orange-400 bg-size-[160px_160px] bg-repeat bg-center"></Tile>
       </div>
     </Section>
   );
