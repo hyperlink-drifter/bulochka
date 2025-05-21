@@ -2,7 +2,7 @@ import { Section } from '@/components/layouts/section';
 import { Tile } from '@/components/tiles/tile-base';
 import H from '@/components/layouts/headings';
 import { DariaCarousel } from './daria-carousel';
-import { TileDaria } from '@/components/tiles/tile-daria';
+import { TileText } from '@/components/tiles/tile-text';
 
 export const AboutDaria = () => {
   return (
@@ -12,7 +12,7 @@ export const AboutDaria = () => {
           <H as="h2" className="col-span-full">
             Hello! <br /> На зв'язку Дар'я Кононенко🧡
           </H>
-          <Tile className="bg-orange-200 p-3 sm:p-4 col-span-full">
+          <TileText className="col-span-full">
             <p>
               Я викладаю англійську мову вже 7 років. За допомогою фільмів в
               оригіналі, я допомогаю вам:
@@ -36,7 +36,7 @@ export const AboutDaria = () => {
               </li>
               <li>Слова перестануть звучати одним потоком, а набудуть сенсу</li>
             </ul>
-          </Tile>
+          </TileText>
         </div>
         <div className="grid gap-3 sm:gap-4 grid-flow-row-dense grid-cols-subgrid col-span-full md:col-span-4 md:order-first lg:col-span-6">
           <DariaCarousel className="aspect-4/3 col-span-8 row-span-2 md:col-span-full md:row-span-1 lg:col-span-4 lg:col-start-3 lg:row-span-2" />
