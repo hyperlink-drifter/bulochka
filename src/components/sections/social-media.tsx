@@ -8,12 +8,13 @@ import { Section } from '@/components/layouts/section';
 import H from '@/components/layouts/headings';
 import A from '@/components/layouts/links';
 import { TileText } from '@/components/tiles/tile-text';
+import { Grid } from '@/components/layouts/grid';
 
 export const SocialMedia = () => {
   return (
     <Section>
-      <div className="grid gap-3 sm:gap-4">
-        <div className="grid gap-3 sm:gap-4 md:grid-cols-4">
+      <Grid>
+        <Grid className="md:grid-cols-4">
           <H as="h2" className="col-span-full">
             Stay in touch,
             <br /> give us a follow
@@ -33,16 +34,16 @@ export const SocialMedia = () => {
               <A to="/">Newsletter</A> for the latest tasty treats!
             </p>
           </TileText>
-        </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 grid-flow-row-dense gap-3 sm:gap-4">
+        </Grid>
+        <Grid className="grid-cols-2 md:grid-cols-4 grid-flow-row-dense">
           <TileVideo className="col-span-1 row-span-2" />
           <TileTelegram className="col-span-1 row-span-1 aspect-square" />
           <TileInstagram className="col-span-1 row-span-1 aspect-square " />
           <TileTikTok className="col-span-1 row-span-1 aspect-square" />
           <TileNewsletter className="col-span-2 md:col-span-2 row-span-1" />
           <TileDaria className="col-span-1 row-span-1 aspect-square" />
-        </div>
-      </div>
+        </Grid>
+      </Grid>
     </Section>
   );
 };

@@ -99,6 +99,9 @@
   --sidebar-ring: oklch(0.705 0.015 286.067);
 
   --gradient-ig: 72.44deg, #ff7a00 11.92%, #ff0169 51.56%, #d300c5 85.69%;
+
+  --gap-bento: 24px;
+  --gap-bento-sm: 32px;
 }
 
 .dark {
@@ -145,16 +148,28 @@
 }
 
 @layer components {
+  .gap-bento {
+    gap: 24px;
+  }
+
+  @media (width >= 640px) {
+    .gap-bento {
+      gap: 32px;
+    }
+  }
+}
+
+@layer components {
   .center {
     box-sizing: content-box;
     margin-inline: auto;
     max-inline-size: 1280px;
-    padding-inline: 12px;
+    padding-inline: 16px;
   }
 
   @media (width >= 640px) {
     .center {
-      padding-inline: 16px;
+      padding-inline: 24px;
     }
   }
 }
