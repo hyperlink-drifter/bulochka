@@ -28,7 +28,7 @@ export function TestimonialsMarquee() {
         <Grid>
           <Marquee
             pauseOnHover
-            className="p-0 [--duration:20s] [--gap:var(--gap-bento)] sm:[--gap:var(--gap-bento-sm)]"
+            className="p-0 [--duration:20s] [--gap:var(--gap-bento)] md:[--gap:var(--gap-bento-md)]"
           >
             {firstRow.map((review) => (
               <ReviewCard key={review.username} {...review} />
@@ -37,7 +37,7 @@ export function TestimonialsMarquee() {
           <Marquee
             reverse
             pauseOnHover
-            className="p-0 [--duration:20s] [--gap:var(--gap-bento)] sm:[--gap:var(--gap-bento-sm)]"
+            className="p-0 [--duration:20s] [--gap:var(--gap-bento)] md:[--gap:var(--gap-bento-md)]"
           >
             {secondRow.map((review) => (
               <ReviewCard key={review.username} {...review} />

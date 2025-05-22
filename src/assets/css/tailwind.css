@@ -100,8 +100,8 @@
 
   --gradient-ig: 72.44deg, #ff7a00 11.92%, #ff0169 51.56%, #d300c5 85.69%;
 
-  --gap-bento: 24px;
-  --gap-bento-sm: 32px;
+  --gap-bento: 18px;
+  --gap-bento-md: 32px;
 }
 
 .dark {
@@ -149,12 +149,12 @@
 
 @layer components {
   .gap-bento {
-    gap: 24px;
+    gap: var(--gap-bento);
   }
 
   @media (width >= 640px) {
     .gap-bento {
-      gap: 32px;
+      gap: var(--gap-bento-md);
     }
   }
 }
