@@ -7,8 +7,8 @@ import { TileText } from '@/components/tiles/tile-text';
 export const AboutDaria = () => {
   return (
     <Section>
-      <div className="grid gap-3 sm:gap-4 grid-cols-12 grid-flow-row-dense">
-        <div className="h-fit grid gap-3 sm:gap-4 grid-cols-subgrid col-span-full md:col-span-8 grid-flow-row-dense lg:col-span-6">
+      <div className="relative grid gap-3 sm:gap-4 grid-cols-12 grid-flow-row-dense">
+        <div className="md:sticky md:top-12 h-fit grid gap-3 sm:gap-4 grid-cols-subgrid col-span-full md:col-span-8 grid-flow-row-dense lg:col-span-6">
           <H as="h2" className="col-span-full">
             Hello! <br /> На зв'язку Дар'я Кононенко🧡
           </H>
