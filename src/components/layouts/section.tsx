@@ -14,7 +14,10 @@ export const Section = ({
   ...forwardedProps
 }: SectionProps) => {
   return (
-    <Tag className={cn('relative py-6 sm:py-8', className)} {...forwardedProps}>
+    <Tag
+      className={cn('relative py-8 sm:py-12', className)}
+      {...forwardedProps}
+    >
       <Center>{children}</Center>
     </Tag>
   );
