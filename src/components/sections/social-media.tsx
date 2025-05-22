@@ -18,7 +18,7 @@ export const SocialMedia = () => {
             Stay in touch,
             <br /> give us a follow
           </H>
-          <TileText className="col-span-full md:col-span-2">
+          <TileText className="col-span-full md:col-span-3 lg:col-span-2">
             <p>You need content? We have content content content</p>
             <p>
               Check out our <A href="https://telegram.org/">Telegram</A>,{' '}
