@@ -43,16 +43,12 @@ export const AboutDaria = () => {
           <Tile className="aspect-3/4 w-full h-full col-span-4 row-span-1 md:col-span-2 md:row-start-1 lg:col-span-2 lg:col-start-1 lg:row-start-auto lg:row-span-1">
             <img
               src="/images/daria-and-the-mac.jpg"
-              loading="lazy"
-              fetchPriority="low"
               className="w-full h-full object-cover"
             />
           </Tile>
           <Tile className="aspect-3/4 w-full h-full col-span-4 row-span-1 md:col-span-2 md:row-start-1 lg:col-span-2 lg:col-start-1 lg:row-start-auto lg:row-span-1">
             <img
               src="/images/daria-and-the-pointy.jpg"
-              loading="lazy"
-              fetchPriority="low"
               className="w-full h-full object-cover"
             />
           </Tile>
