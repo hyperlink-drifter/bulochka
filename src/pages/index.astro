@@ -1,5 +1,6 @@
 ---
 import Layout from '@layouts/Layout.astro';
+import { Counter } from '@components/counter';
 import { actions } from 'astro:actions';
 
 const priceId = 'price_1RUaEl4JFwNDqW7nWDP1ibWB';
@@ -28,4 +29,5 @@ if (result && !result.error) {
     <button type="submit">Send message</button>
   </form>
   <a href="/about">About</a>
+  <Counter />
 </Layout>

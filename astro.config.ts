@@ -4,9 +4,17 @@ import tailwindcss from "@tailwindcss/vite";
 
 import node from "@astrojs/node";
 
+import qwikdev from "@qwikdev/astro";
+
 // https://astro.build/config
 export default defineConfig({
   output: "server",
+
+  adapter: node({
+    mode: "standalone",
+  }),
+
+  integrations: [qwikdev()],
 
   vite: {
     plugins: [tailwindcss()],
@@ -20,8 +28,4 @@ export default defineConfig({
       }),
     },
   },
-
-  adapter: node({
-    mode: "standalone",
-  }),
 });
