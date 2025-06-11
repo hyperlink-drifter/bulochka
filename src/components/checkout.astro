@@ -1,0 +1,26 @@
+---
+import { actions } from 'astro:actions';
+import { Button } from '@/components/ui/button';
+
+const priceId = 'price_1RUaEl4JFwNDqW7nWDP1ibWB';
+
+const result = Astro.getActionResult(actions.stripe.createCheckout);
+
+if (result && !result.error) {
+  if (result.data.url) {
+    Astro.response.status = 302;
+    Astro.response.headers.set('Location', result.data.url);
+  }
+}
+---
+
+<!-- https://docs.astro.build/en/guides/view-transitions/#transitions-with-forms -->
+<form
+  method="POST"
+  action={actions.stripe.createCheckout}
+  data-astro-reload
+  enctype="application/x-www-form-urlencoded"
+>
+  <input type="hidden" name="id" value={priceId} />
+  <Button type="submit">Checkout</Button>
+</form>

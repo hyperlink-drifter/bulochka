@@ -1,32 +1,10 @@
 ---
 import Layout from '@layouts/Layout.astro';
-import { Counter } from '@components/counter';
-import { actions } from 'astro:actions';
-
-const priceId = 'price_1RUaEl4JFwNDqW7nWDP1ibWB';
-
-const result = Astro.getActionResult(actions.stripe.createCheckout);
-
-if (result && !result.error) {
-  if (result.data.url) {
-    Astro.response.status = 302;
-    Astro.response.headers.set('Location', result.data.url);
-  }
-}
+import Checkout from '@components/checkout.astro';
 ---
 
 <Layout>
   <h1 class="text-3xl font-bold underline">Hello world!</h1>
-  <!-- https://docs.astro.build/en/guides/view-transitions/#transitions-with-forms -->
-  <form
-    method="POST"
-    action={actions.stripe.createCheckout}
-    data-astro-reload
-    enctype="application/x-www-form-urlencoded"
-  >
-    <input type="hidden" name="id" value={priceId} />
-    <button type="submit">Send message</button>
-  </form>
+  <Checkout />
   <a href="/about">About</a>
-  <Counter />
 </Layout>

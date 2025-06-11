@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 import node from "@astrojs/node";
 
-import qwikdev from "@qwikdev/astro";
+import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
@@ -14,7 +14,7 @@ export default defineConfig({
     mode: "standalone",
   }),
 
-  integrations: [qwikdev()],
+  integrations: [react()],
 
   vite: {
     plugins: [tailwindcss()],

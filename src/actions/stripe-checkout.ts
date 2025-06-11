@@ -15,13 +15,12 @@ export const stripe = {
       const session = await stripe.checkout.sessions.create({
         line_items: [
           {
-            // Provide the exact Price ID (for example, price_1234) of the product you want to sell
             price: input.id,
             quantity: 1,
           },
         ],
         mode: "payment",
-        success_url: "https://waku.gg/",
+        success_url: "https://waku.gg/", // TODO: API / Page
         cancel_url: "https://docs.stripe.com/payments/checkout",
       });
 
